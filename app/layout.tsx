@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
-import { Livepeerprovider } from './LivepeerProvider'
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
+import { Livepeerprovider } from './LivepeerProvider'
+import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -43,13 +43,13 @@ export default function RootLayout({
                 Livepeer Studio
               </p>
             </Link>
-            <Link
+            {/* <Link
               href="https://github.com/livepeer/awesome-livepeer"
               target='_blank'>
               <p className='cursor-pointer ml-6'>
                 Awesome Livepeer
               </p>
-            </Link>
+            </Link> */}
           </nav>
           {children}
         </Livepeerprovider>
